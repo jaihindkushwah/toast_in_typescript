@@ -1,0 +1,110 @@
+.toastWrapper {
+  position: fixed;
+  top: 0;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* z-index: 0; */
+}
+.toast {
+  z-index: 100;
+  /* position: fixed; */
+  color: white;
+  padding: 5px 10px;
+  gap: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  max-height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.toast > div {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* align-items: center; */
+}
+.toast h4 {
+  font-size: 16px;
+  font-weight: 500;
+  word-spacing: 1.5px;
+  align-self: center;
+}
+.toast p {
+  font-size: 14px;
+  text-overflow: clip;
+  max-height: 40px;
+  align-self: center;
+}
+.top {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 100%; */
+}
+.top-left {
+  top: 5px;
+  /* bottom: 0; */
+  left: 5px;
+  transform: translateY(-0%);
+}
+.top-right {
+  top: 5px;
+  /* bottom: 0; */
+  right: 5px;
+  transform: translateY(-0%);
+}
+
+.bottom {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bottom-left {
+  left: 5px;
+  bottom: 0;
+  transform: translateY(-100%);
+}
+.bottom-right {
+  bottom: 0;
+  right: 5px;
+  transform: translateY(-100%);
+}
+.left {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center {
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* vertical-align: middle; */
+  /* vertical-align: -webkit-baseline-middle; */
+}
+
+.warning {
+  background-color: rgb(243, 117, 39);
+}
+.success {
+  background-color: rgb(4, 172, 4);
+}
+.error {
+  background-color: red;
+}
+.info {
+  background-color: rgb(25, 25, 249);
+}
